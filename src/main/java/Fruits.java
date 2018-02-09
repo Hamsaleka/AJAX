@@ -2,8 +2,7 @@ class Fruits
 {
     private int id;
     private String name;
-    Fruits()
-    {}
+    
     Fruits(int id,String name)
     {
         this.id=id;
@@ -24,6 +23,10 @@ class Fruits
     public String getName()
     {
         return name;
+    }
+    @Override
+    public String toString() {
+        return id+name;
     }
 
 }

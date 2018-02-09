@@ -12,8 +12,7 @@
          function servletCall() {
              $.post(
                  "GetUserServlet", 
-                 {name : "Message from jsp"},
-                // {name:"hello,it works"}, //message you want to send
+                 {name : "Message from jsp"}, //meaasge you want to send
                  function(result) {
                  $('#somediv').html('Here is your result : <strong>' + result + '</strong>'); //message you want to show
              });
@@ -21,10 +20,7 @@
        </script>
     </head>
     <body>
-       
          <button id="somebutton">press here</button>
          <div id="somediv"></div>
-         
-
     </body>
     </html>

@@ -1,8 +1,11 @@
+
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.*;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 
+@WebServlet("GetUserServlet")
 public class GetUserServlet extends HttpServlet {
 public void doGet(HttpServletRequest request, HttpServletResponse response)
         throws ServletException, IOException {
@@ -17,3 +20,7 @@ public void doPost(HttpServletRequest request, HttpServletResponse response)
     out.println(text + name);
 }
 }
+
+
+
+
